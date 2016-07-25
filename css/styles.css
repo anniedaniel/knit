@@ -11,6 +11,10 @@ h1, li{
 	font-family: basic;
 }
 
+a {
+	text-decoration: none;
+}
+
 ul {
 	padding: inherit;
 }
@@ -35,6 +39,20 @@ li{
 	text-align: center;
 }
 
+.video-container {
+	display: inline-block;
+	float: left;
+	min-height;
+	width: 50%;
+	text-align: center;
+}
+
+.pattern-container, .resource-container {
+	clear: both;
+	display: block;
+	width: 100%;
+}
+
 .pink{
 	color: #FF638C;
 }
@@ -46,6 +64,14 @@ li{
 .nav-item{
 	display: inline-block;
 	padding: 5px 10px;
+}
+
+.link {
+	color: black;
+}
+
+.link:hover {
+	color: #FF638C;
 }
 
 .nav-item:hover{
@@ -67,5 +93,10 @@ li{
 	.about-expand{
 		width: 80%;
 		margin: 0px auto;
+	}
+
+	.video-container {
+		width: 80%;
+		display: block;
 	}
 }
