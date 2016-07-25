@@ -1,0 +1,71 @@
+@font-face{
+	font-family: basic;
+	src: url(fonts/basictitlefont.ttf);
+}
+
+h1 {
+	margin: .5em;
+}
+
+h1, li{
+	font-family: basic;
+}
+
+ul {
+	padding: inherit;
+}
+
+ul.nav{
+	text-align: center;
+}
+
+li:first-child{
+	border-left: none;
+}
+
+li{
+	list-style-type: none;
+	font-size: 1.5em;
+	border-left: 1px solid #555;
+	cursor: pointer;
+}
+
+.header{
+	font-size: 2.2em;
+	text-align: center;
+}
+
+.pink{
+	color: #FF638C;
+}
+
+.text{
+	font-family: 'Crimson Text', serif;
+}
+
+.nav-item{
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+.nav-item:hover{
+	color: #FF638C;
+}
+
+@media (max-width: 300px) {
+	.nav-item{
+		display: block;
+		padding: 5px 10px;
+	}
+
+	li{
+		border-left: none;
+	}
+}
+
+@media (max-width: 700px) {
+	.about-expand{
+		width: 80%;
+		margin: 0px auto;
+	}
+}

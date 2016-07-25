@@ -17,31 +17,35 @@
   	<div class="header">
     	<h1>Learn to knit</h1> 
     </div>
-    <ul class="portfolio-nav">
-    	<li class="nav-item clips">Videos</li>
-    	<li class="nav-item resume">Patterns</li>
-    	<li class="nav-item about">Resources</li>
-    </ul>
+    <div class="nav-container">
+        <ul class="nav">
+        	<li class="nav-item videos">Videos</li>
+        	<li class="nav-item patterns">Patterns</li>
+        	<li class="nav-item resources">Resources</li>
+        </ul>
+    </div>
 
     <div class="videos-expand detail">
     	<div id="videos" class="text"></div>
     </div>
 
     <div class="patterns-expand detail">
-        <div id="patterns"></div>
+        <div id="patterns" class="text"></div>
     </div>
 
     <div class="resources-expand detail">
-    	<div id="resources"></div>
+    	<div id="resources" class="text"></div>
     </div>
 
     <script class="template-video" type="text/x-handlebars-template">
-      <div class="entry">
+    {{#if category}}
+      <div class="video-wrapper">
         <h2>{{title}}</h2>
         <div class="video-description">
           {{description}}
         </div>
       </div>
+    {{/if}}
     </script>
 
     <script class="template-pattern" type="text/x-handlebars-template">
