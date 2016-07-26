@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Annie Daniel</title>
 
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<!--     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <link href="css/styles.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
 
@@ -38,15 +38,17 @@
     </div>
 
     <script class="template-video" type="text/x-handlebars-template">
+    {{#if category}}
       <div class="video-container">
         <h2>{{title}}</h2>
         <div class="video-frame">
-            <iframe width="420" height="315" src="{{url}}" frameborder="0" allowfullscreen></iframe>
+            <iframe class="video-box" width="420" height="315" src="{{url}}" frameborder="0" allowfullscreen></iframe>
         </div>
-        <div class="video-description">
+<!--         <div class="video-description">
           {{description}}
-        </div>
+        </div> -->
       </div>
+    {{/if}}
     </script>
 
     <script class="template-pattern" type="text/x-handlebars-template">
@@ -69,7 +71,6 @@
 
     <!-- jQuery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <script type="text/javascript" src="js/tabletop.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
