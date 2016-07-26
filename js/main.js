@@ -2,8 +2,23 @@ $(document).ready( function() {
 	Tabletop.init( { key: '1w40A5LqRz3ZLPu3zIwE5tCUsNI81I8XgfsZ9J2DiG7k',
                  callback: showInfo,
                  parseNumbers: true } );
-	var video = $('.video-frame').fitVids();
-	console.log(video);
+
+	$('.detail').hide();
+
+	$('.videos').click(function() {
+		$('.detail').hide();
+		$('.videos-expand').show();
+	})
+
+	$('.patterns').click(function() {
+		$('.detail').hide();
+		$('.patterns-expand').show();
+	})
+
+	$('.resources').click(function() {
+		$('.detail').hide();
+		$('.resources-expand').show();
+	})
 });
 
 function showInfo(data, tabletop) {

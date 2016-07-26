@@ -43,7 +43,7 @@ li{
 	display: inline-block;
 	float: left;
 	min-height;
-	width: 40%;
+	width: 48%;
 	text-align: center;
 	margin: .5em;
 	min-height: 350px;
@@ -52,7 +52,11 @@ li{
 .pattern-container, .resource-container {
 	clear: both;
 	display: block;
-	width: 100%;
+}
+
+.patterns-expand, .resources-expand {
+	width: 50%;
+	margin: 0 auto;
 }
 
 .pink{
