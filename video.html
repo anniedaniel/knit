@@ -15,20 +15,38 @@
   
   <body>
     <div class="header">
-        <h1>Learn to knit</h1> 
+      <h1>Learn to knit</h1> 
     </div>
     <div class="nav-container">
         <ul class="nav">
-            <a href="/video.html"><li class="nav-item videos">Videos</li></a>
-            <a href="/patterns.html"><li class="nav-item patterns">Patterns</li></a>
-            <a href="/resources.html"><li class="nav-item resources">Resources</li></a>
+          <a href="/video.html"><li class="nav-item videos">Videos</li></a>
+          <a href="/patterns.html"><li class="nav-item patterns">Patterns</li></a>
+          <a href="/resources.html"><li class="nav-item resources">Resources</li></a>
         </ul>
     </div>
+
+
+    <div class="videos-expand detail">
+    	<div id="videos" class="text"></div>
+    </div>
+
+    <script class="template-video" type="text/x-handlebars-template">
+      <div class="video-container">
+        <h2>{{title}}</h2>
+        <div class="video-frame">
+            <iframe class="video-box" width="420" height="315" src="{{url}}" frameborder="0" allowfullscreen></iframe>
+        </div>
+<!--         <div class="video-description">
+          {{description}}
+        </div> -->
+      </div>
+    </script>
 
     <!-- jQuery  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
-    <script type="text/javascript" src="js/tabletop.js"></script>
+    <script type="text/javascript" src="js/vendor/tabletop.js"></script>
+    <script type="text/javascript" src="js/video.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
