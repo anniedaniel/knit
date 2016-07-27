@@ -13,6 +13,11 @@ h1, li{
 
 a {
 	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #FF638C;
 }
 
 ul {
@@ -32,31 +37,6 @@ li{
 	font-size: 1.5em;
 	border-left: 1px solid #555;
 	cursor: pointer;
-}
-
-.header{
-	font-size: 2.2em;
-	text-align: center;
-}
-
-.video-container {
-	display: inline-block;
-	float: left;
-	min-height;
-	width: 45%;
-	text-align: center;
-	margin: .5em;
-	min-height: 350px;
-}
-
-.pattern-container, .resource-container {
-	clear: both;
-	display: block;
-}
-
-.patterns-expand, .resources-expand {
-	width: 50%;
-	margin: 0 auto;
 }
 
 .pink{
@@ -84,12 +64,42 @@ li{
 	color: #FF638C;
 }
 
+.header{
+	font-size: 2.2em;
+	text-align: center;
+}
+
+.pattern-container, .resource-container {
+	clear: both;
+	display: block;
+}
+
+.patterns-expand, .resources-expand {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.level {
+	color: black;
+}
+
+.video-container {
+	display: inline-block;
+	float: left;
+	min-height;
+	width: 45%;
+	text-align: center;
+	margin: .5em;
+	min-height: 350px;
+}
+
 .video-frame {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
 }
+
 .video-frame iframe {
 	position: absolute;
 	top: 0;
