@@ -127,9 +127,23 @@ li{
 }
 
 
-.table {
+table {
+	border-collapse: collapse;
 	width: 100%;
 	margin-top: 2em;
+}
+
+td {
+	padding: .5em;
+
+}
+
+tr:nth-child(even) {
+	background: #DDD
+}
+
+tr:nth-child(odd) {
+	background: #FFF
 }
 
 @media (max-width: 700px) {
@@ -146,6 +160,12 @@ li{
 	.text {
 		margin: 0 2.5%;
 	}
+
+	.patterns-expand, .resources-expand {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
 
 @media (max-width: 350px) {
 	.nav-item{
