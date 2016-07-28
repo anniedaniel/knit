@@ -70,6 +70,10 @@ li{
 	color: #FF638C;
 }
 
+a.inline-link {
+	color: #FF638C;
+}
+
 .nav-item:hover{
 	color: #FF638C;
 }
