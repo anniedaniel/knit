@@ -5,4 +5,11 @@ function showInfo(data, tabletop) {
 	  var html = resourceTemplate(resource);
 	  $("#resources").append(html);
 	});
+
+	var abbrev = $(".template-abbrev").html();
+	var abbrevTemplate = Handlebars.compile(abbrev);
+	$.each( tabletop.sheets("abbreviations").all(), function(i, abbrev) {
+	  var html = abbrevTemplate(abbrev);
+	  $("#abbrevs").append(html);
+	});
 }

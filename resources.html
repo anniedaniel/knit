@@ -27,15 +27,32 @@
 
     <div class="resources-expand detail">
     	<div id="resources" class="text"></div>
+
+      <div class="abbrevs-expand detail">
+          <table id="abbrevs" class="table text">
+            <tr>
+              <th>Abbreviation</th>
+              <th>Translation</th> 
+            </tr>
+            <!-- <div id="abbrevs" class="text"></div> -->
+          </table>
+      </div>
     </div>
 
     <script class="template-resource" type="text/x-handlebars-template">
       <div class="resource-container">
         <a href="{{url}}"><h2 class="link">{{title}}</h2></a>
-<!--         <div class="resource-description">
+        <div class="resource-description">
           {{description}}
-        </div> -->
+        </div>
       </div>
+    </script>
+
+    <script class="template-abbrev" type="text/x-handlebars-template">
+      <tr>
+        <td>{{abbrev}}</td>
+        <td>{{translation}}</td>
+      </tr>
     </script>
 
     <!-- jQuery  -->
